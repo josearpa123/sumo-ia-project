@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-07 23:35:09 by Eclipse SUMO GUI Version 1.15.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/josea/sumo-ai-project/sumo/red.net.xml"/>
+        <route-files value="/home/josea/sumo-ai-project/sumo/routes.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="/home/josea/sumo-ai-project/sumo/tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="veh1" depart="0.00" departLane="E1_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="81.00" arrivalLane="E4_0" arrivalPos="100.00" arrivalSpeed="9.38" duration="81.00" routeLength="394.90" waitingTime="35.00" waitingCount="1" stopTime="0.00" timeLoss="43.45" rerouteNo="0" devices="tripinfo_veh1" vType="car" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="veh3" depart="20.00" departLane="E5_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="93.00" arrivalLane="E4_0" arrivalPos="100.00" arrivalSpeed="9.06" duration="73.00" routeLength="336.32" waitingTime="32.00" waitingCount="1" stopTime="0.00" timeLoss="39.15" rerouteNo="0" devices="tripinfo_veh3" vType="car" speedFactor="1.01" vaporized=""/>
+    <tripinfo id="veh4" depart="30.00" departLane="E6_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="93.00" arrivalLane="E1_0" arrivalPos="100.00" arrivalSpeed="9.39" duration="63.00" routeLength="336.32" waitingTime="21.00" waitingCount="1" stopTime="0.00" timeLoss="31.43" rerouteNo="0" devices="tripinfo_veh4" vType="car" speedFactor="1.08" vaporized=""/>
+    <tripinfo id="veh2" depart="10.00" departLane="E3_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="94.00" arrivalLane="E2_0" arrivalPos="100.00" arrivalSpeed="8.76" duration="84.00" routeLength="394.90" waitingTime="34.00" waitingCount="1" stopTime="0.00" timeLoss="41.77" rerouteNo="0" devices="tripinfo_veh2" vType="car" speedFactor="0.94" vaporized=""/>
+</tripinfos>

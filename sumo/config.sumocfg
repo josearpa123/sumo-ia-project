@@ -1,0 +1,15 @@
+<configuration>
+    <input>
+        <net-file value="red.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+</configuration>

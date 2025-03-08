@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  sumo:
+    build:
+      context: ./sumo
+      dockerfile: Dockerfile
+    volumes:
+      - ./sumo:/sumo
+    depends_on:
+      - ai
+    command: ["sh", "/sumo/run_sumo.sh"]
+
+  ai:
+    build:
+      context: ./ai
+      dockerfile: Dockerfile
+    volumes:
+      - ./ai:/ai
+    ports:
+      - "5000:5000"
