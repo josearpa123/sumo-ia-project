@@ -1,9 +1,13 @@
 #!/bin/bash
 
 # Definir las rutas de los archivos
-CONFIG_FILE="/sumo/config.sumocfg"
-OUTPUT_FILE="/sumo/tripinfo.xml"
+CONFIG_FILE="./config.sumocfg"
+OUTPUT_FILE="./tripinfo.xml"
 AI_API_URL="http://ai:5000/process"  # Endpoint de la IA en Docker
+
+echo "📂 Buscando archivo en: $CONFIG_FILE"
+ls -l "$CONFIG_FILE"
+
 
 # Verificar si el archivo de configuración existe
 if [ ! -f "$CONFIG_FILE" ]; then

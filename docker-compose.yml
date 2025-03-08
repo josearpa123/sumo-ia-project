@@ -1,21 +1,26 @@
 version: "3.8"
-
 services:
   sumo:
     build:
       context: ./sumo
       dockerfile: Dockerfile
     volumes:
-      - ./sumo:/sumo
+      - ./sumo:/sumo:rw
     depends_on:
-      - ai
+      ai:
+        condition: service_healthy
     command: ["sh", "/sumo/run_sumo.sh"]
-
+  
   ai:
     build:
       context: ./ai
       dockerfile: Dockerfile
     volumes:
       - ./ai:/ai
-    ports:
-      - "5000:5000"
+      - ./sumo:/sumo
+    network_mode: "host"  # Usa la red del host directamente
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
